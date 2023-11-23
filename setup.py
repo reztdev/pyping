@@ -4,14 +4,7 @@ setup(
     name='pyping',
     version='1.0.0',
     py_modules=['pyping'],
-    install_requires=[
-        'scapy',
-        ],
-    entry_points={
-        'console_scripts': [
-            'pyping = pyping:ping' 
-            ],
-        },
+    install_requires=['scapy'],
     author='Muhammad Rizki (reztdev)',
     author_email='reztdev_ryz@gmail.com',
     description='Simple ping TCP and ICMP implementation in Python',
