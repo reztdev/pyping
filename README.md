@@ -13,9 +13,9 @@ You need as admin or root to running this module
 
 - You can make things as you wish
 ```python
-import pyping
+from pyping import pyping
 
-pyping.ping("www.google.com", count=10, protocol="icmp")
+pyping.ping("www.google.com", count=5, protocol="icmp")
 ```
 
 ## Run script
