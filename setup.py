@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='pyping',
@@ -15,7 +15,7 @@ setup(
     author='Muhammad Rizki (reztdev)',
     author_email='reztdev_ryz@gmail.com',
     description='Simple ping TCP and ICMP implementation in Python',
-    license='MIT',
+    packages=find_packages(),
     keywords='ping tcping scapy networking',
     url='https://github.com/reztdev/pyping',
     classifiers=[
