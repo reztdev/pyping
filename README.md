@@ -1,11 +1,5 @@
 ## PyPing a simple Ping Python
 
-## Run script
-![Screenshot 1](images/run.png)
-
-## Result capture with Netsniff-ng
-![Screenshot 2](images/cap.png)
-
 ## How to use?
 
 install dependencies for support this module:
@@ -24,3 +18,8 @@ import pyping
 pyping.ping("www.google.com", count=10, protocol="icmp")
 ```
 
+## Run script
+![Screenshot 1](images/run.png)
+
+## Result capture with Netsniff-ng
+![Screenshot 2](images/cap.png)
