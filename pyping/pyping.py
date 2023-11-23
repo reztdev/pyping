@@ -1,4 +1,4 @@
-from scapy.all import *
+from scapy.all import IP, TCP, ICMP, Raw, sr1, hexdump
 import time
 import sys
 
@@ -12,8 +12,13 @@ example:
     with payload:
         - pyping.ping(host="192.168.10.123", count=10, payload="\x41\x00\x00")
 """
+
+__all__ = ['ping']
+
 protos = {1: "icmp", 6: "tcp", 17: "udp"}
 
+def __dir__():
+    return __all__
 
 def print_ip_header(ip_packet):
     ihl = ip_packet.ihl
